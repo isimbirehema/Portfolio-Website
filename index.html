@@ -4,108 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Isimbi Rehema - Portfolio</title>
-    <link href="css/desktop.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background: linear-gradient(135deg, #003C71, #00509e);
-            color: white;
-        }
-        header {
-            background: #376092;
-            padding: 1rem 0;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            gap: 2rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        nav a.active,
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 900px;
-            margin: 2rem auto 4rem;
-            padding: 0 1rem;
-        }
-        .welcome {
-            margin-bottom: 2rem;
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-        .welcome h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #FFD369;
-        }
-        .description {
-            margin-bottom: 3rem;
-            font-size: 1.15rem;
-        }
-        .highlights {
-            display: flex;
-            flex-direction: column;
-            max-width: 320px;
-            margin-left: 0;
-        }
-        .highlight {
-            background: #00509e;
-            padding: 1.5rem 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(65, 64, 64, 0.3);
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: background 0.3s ease;
-            width: fit-content;
-            margin-bottom: 1rem;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .highlight:hover {
-            background: #507ba1;
-        }
-        .highlight:nth-child(2) {
-            margin-left: 40px;
-        }
-        .highlight:nth-child(3) {
-            margin-left: 80px;
-        }
-        footer {
-            background: #032244;
-            text-align: center;
-            padding: 1rem;
-            color: white;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #FFD369;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .highlights {
-                max-width: 100%;
-                margin-left: 0;
-            }
-            .highlight {
-                margin-left: 0 !important;
-            }
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:601px) and (max-width:1024px)">
+    <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width:1025px)">
+    
 </head>
 <body>
     <header>
@@ -119,27 +22,31 @@
         </nav>
     </header>
 
-    <main>
-        <section class="welcome">
-            <h1>Welcome To My Portfolio</h1>
+
+    <main class="center-content">
+    <section class="welcome">
+        <h1>Welcome To My Portfolio</h1>
             <p class="description">
                 Hello! I'm <strong>Isimbi Rehema</strong>, a second-year student at Ontario Tech University studying Networking and IT Security. This portfolio shares my academic journey, projects, and ways to connect with me.
             </p>
             <p class="description">
                 Focused on networking and IT security, I work with cloud technologies and cybersecurity to design safe, efficient networks that protect data and privacy in today’s digital world.
             </p>
-        </section>
+    </section>
+    <section class="highlights-section">
+        <div class="highlights">
+            <a href="about.html" class="highlight">About Me</a>
+            <a href="projects.html" class="highlight">Projects</a>
+            <a href="contact.html" class="highlight">Contact</a>
+        </div>
+    </section>
+</main>
 
-        <section class="highlights">
-            <a href="about.html" class="highlight" tabindex="0">About Me</a>
-            <a href="projects.html" class="highlight" tabindex="0">Projects</a>
-            <a href="contact.html" class="highlight" tabindex="0">Contact</a>
-        </section>
-    </main>
 
     <footer>
-        <p>Contact: <a href="mailto:isimbi.rehema@ontariotechu.net">isimbi.rehema@ontariotechu.net</a></p>
+        <p>Contact: <a href="mailto:isimbi.rehema@ontariotechu.net"> isimbi.rehema@ontariotechu.net</a></p>
         <p>&copy; 2025 Isimbi Rehema</p>
     </footer>
+
 </body>
 </html>
